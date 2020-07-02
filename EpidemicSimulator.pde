@@ -57,7 +57,6 @@ void setup() {
         heatMaps.add(new HeatMap(people, renderer, p, pos, img, mapsSize));
       }
     }
-    //  int numOfMaps = (1.0/(mapsSize+2*mapsMargin))
   } else {
     mapsSize = 1.0;
     heatMaps.add(new HeatMap(people, renderer, new Params(), new PVector(0, 0), img, mapsSize));

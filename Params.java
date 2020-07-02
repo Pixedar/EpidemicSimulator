@@ -1,8 +1,6 @@
 import processing.core.*;
 import java.io.Serializable;
 class Params implements Serializable {
-  //SIMULATION PARAMS:
-  public float simulationResolution = 1.0f;
   //local mortality rate is calculated based on nerbay acive cases, localMortalityRateSamplesFactor specify ratio of samples to total number of population, the highest the value the more precise local mortality rate is caluclatd at the cost of performance
   public float localMortalityRateSamplesFactor = 0.07f; 
   public int numOfHotspots = 4;

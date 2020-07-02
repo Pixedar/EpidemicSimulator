@@ -12,7 +12,6 @@ class HeatMap {
   int numOfDeaths= 0;
   int totoalInfected = 0;
 
-
   float alpha = 0.75*255;
   color infectedColor;
   color detectedColor;
@@ -64,7 +63,6 @@ class HeatMap {
     recoveredColor = color(0, 255, 0, alpha);
     deadColor = color(255, 255, 0, 255);
 
-    //    init();
 
     positions = new float[(people.size()-1)*2];
     colors = new float[(people.size()-1)*4];
@@ -77,10 +75,6 @@ class HeatMap {
 
     infect(params.numOfPeopleInfectedAtTheBegining); 
 
-
-
-
-    //   distributePeople();
     if (img.height > img.width) {
       maxDistanceForCityTravel = img.height*mapsSize;
     } else {
